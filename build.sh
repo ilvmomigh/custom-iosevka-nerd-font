@@ -71,6 +71,6 @@ docker run --rm "${TTY_ARGS[@]}" \
         if [ ! -f .build/.verda-build-journal ] && [ -d .build-seed ]; then \
             mkdir -p .build && cp -a .build-seed/. .build/; \
         fi && \
-        time bun run build -- ttf::${FONT_NAME} && \
+        time bun run build -- contents::${FONT_NAME} && \
         cd ${BUILD_DIR} && \
         time python3 nerd-patcher.py"

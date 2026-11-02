@@ -2,7 +2,7 @@
 family = "afio"
 spacing = "normal"
 serifs = "sans"
-noCvSs = true
+noCvSs = false
 exportGlyphNames = false
 
   
